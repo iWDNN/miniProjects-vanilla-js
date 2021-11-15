@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div class="mobile-container">
+    <header class="header">
+      <div class="logo">
+        TheMeal<span>DB.com</span>
+      </div>
+      <div class="search-bar">
+        <input type="text">
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="btn-group">
+        <ul>
+          <li><button class="btn fav-btn"><i class="fas fa-star"></i><span>fav</span></button></li>
+        </ul>
+      </div>
+    </header>
+    <div class="fav-meals">
+      <ul id="fav-ct">
+        <li class="skeleton"></li>
+      </ul>
+    </div>
+    <div id="meal-ct"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  letter-spacing: -0.5px;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  margin:0;
+  background-image :linear-gradient(40deg, #85a8b4 0%, #DEEAEE 30%);
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-container{
+  width:280px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 18px 50px -10px;
+}
+.mobile-container header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:70px;
+  padding: 0 16px;
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #02B0FE 0%, #4DD0E1 74%);
+  color:#fff;
+}
+.mobile-container header .title{
+  font-weight: 500;
+  font-size:0.9em;
+}
+.mobile-container header i{
+  font-size:1.5em;
+}
+section{
+  padding: 6px 16px;
+  background-color: #ECEFF1;
+  transition: .4s;
+}
+section .status{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:6px 0;
+}
+section .status .questions{
+
+}
+section .status .questions .current-status{
+  color:#34434b;
+  font-size:1em;
+  font-weight: 600;
+  margin-right: 3px;
+}
+section .status .questions .all-status{
+  color:#95A8B1;
+  font-size:0.75em;
+  letter-spacing: 0;
+}
+section .status .checks i{
+  font-size:0.75em;
+}
+section .status .checks i:first-child{
+  color:#F0532A;
+}
+section .status .checks .fa-check-circle{
+  color:#6AC25A;
+  margin-left:10px;
+}
+section .status .checks span{
+  font-size:0.7em;
+  color:#95A8B1;
+}
+section .status-bar{
+  position: relative;
+  width:100%;
+  height:9px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+section .current-bar{
+  position: absolute;
+  width:50%;
+  height: inherit;
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #02B0FE 0%, #4DD0E1 74%);
+  border-radius: 5px;
+  transition: .4s ease-in-out;
+  z-index:1;
+}
+section .bar{
+  position: absolute;
+  width:inherit;
+  height: inherit;
+  background-color: #fff;
+}
+
+section .question-container{
+  margin-top:14px;
+  padding-bottom:11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+section .question-container .question{
+  width:100%;
+  background-color: #F8F9FA;
+  padding:18px 10px;
+  text-align: center;
+  color:#34BEFD;
+  font-weight: 500;
+}
+section .question-container .answers{
+  list-style-type: none;
+  width:100%;
+  padding-left:23px;
+}
+section .question-container .answers li{
+  padding:14px 0;
+}
+section .question-container .answers li span:first-child{
+  color:#34434b;
+  font-size:1.1em;
+  font-weight: 600;
+  margin-right:7px;
+}
+section .question-container .answers li span:last-child{
+  color:#34434bA1;
+  font-size:0.8em;
+}
+section .btn-group{
+  margin:17px 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .btn{
+  width:47px;
+  height:47px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  border:none;
+  font-weight: 600;
+  color:#34434bA1;
+  cursor:pointer;
+  transition: .2s ease-in-out;
+}
+section .btn.retry:hover{
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #02B0FE 0%, #4DD0E1 74%);
+  color:#fff;
+}
+section .btn-group .btn.active{
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #00405e 0%, #1d535a 74%);
+  border:3px solid white;
+  color:#fff;
+}
+section .submitBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #02B0FE 0%, #4DD0E1 74%);
+  color:#fff;
+}
+section .submitBtn:hover{
+  background-color: #02B0FE;
+  background-image: linear-gradient(315deg, #027db6 0%, #3798a5 74%);
+  color:#fff;
+}
+
+
+.fade-in{
+  opacity: 0;
+}
+
+
+/* result */
+section .wrap{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .4s;
+}
+section h2{
+  text-align: center;
+  color:rgba(0,0,0,0.8);
+}
+section .fa-surprise,
+section .fa-smile,
+section .fa-fire{
+  font-size:4em;
+  margin-top:1em;
+}
+.fa-surprise{
+  color:#02B0FE;
+}
+.fa-smile{
+  color:#6AC25A;
+}
+.fa-fire{
+  color:red;
+}

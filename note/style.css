@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  margin:0;
+  background-color: #130f40;
+  padding-top:3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-btn{
+  cursor: pointer;
+  border: none;
+  background-color: #30336b;
+  box-shadow: 0 1px  gray;
+  color:#eee;
+  position: fixed;
+  top:1rem;
+  right:1rem;
+  font-size: 1rem;
+  padding:0.5rem 1rem;
+  border-radius: 3px;
+  opacity: 0.9;
+}
+.add-btn:hover{
+  background-color: #3a3c66;
+  opacity: 1;
+}
+.note{
+  margin:1rem;
+  width:350px;
+  min-height:350px;
+  overflow: hidden;
+  background-color: #3a3c66;
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.9);
+  
+}
+.note .btn-group{
+  background-color: #30336b;
+  padding:0.5rem 0.7rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.note .btn-group button{
+  margin-left:0.5rem;
+  border: none;
+  background-color: transparent;
+  color:gray;
+  cursor: pointer;
+}
+.note .btn-group button:hover i{
+  color:white;
+}
+.note .btn-group button.active{
+  color:white;
+}
+.note .main{
+  background-color: #3a3c66;
+  width:350px;
+  min-height: 340px;
+  color:white;
+  font-size: 0.8rem;
+}
+.note textarea{
+  font-size:1.2rem;
+  color:white;
+  resize: none;
+  outline: none;
+  background-color: black;
+  padding:0;
+  border: none;
+  width:350px;
+  min-height: 350px;
+}
+.note .hidden{
+  display: none;
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+  margin:0;
+  background-color: #F4F7FD;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+img {
+  max-width:100%;
+}
+.mobile-container{
+  width:100%;
+
+  box-shadow: 0 0 10px 2px #3333331A;
+}
+.header{
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #fff;
+  padding:0.75rem 0;
+}
+.header .logo{
+  cursor:pointer;
+  text-align: center;
+  width:30%;
+  font-weight: 600;
+}
+.header .logo span{
+  color: #F35437;
+}
+.header .search-bar{
+  width:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header .search-bar input{
+  position: absolute;
+  width:100%;
+  background-color:#eeeeeeA1;
+  border:none;
+  padding:0.6rem;
+  border-radius: 5px;
+}
+.header .search-bar button{
+  position: absolute;
+  right:0.25em;
+  width:10%;
+  text-align:end;
+  border:none;
+  font-size:1em;
+  background-color: transparent;
+}
+.header .btn-group{
+  width:30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+.header .btn-group .btn{
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.header .btn-group ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.header .btn-group ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .btn-group ul li i{
+  display: block;
+  font-size:1.05rem;
+  color:#F35437;
+}
+.header .btn-group ul li span{
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color:#00000066;
+}
+.header .btn-group .btn.fav-btn.active span{
+  color:black;
+}
+.wrap .no-result{
+  padding:8rem;
+  font-weight: 400;
+  text-align: center;
+  color:#00000033;
+}
+.fav-meals{
+  margin-top:1rem;
+  display: flex;
+}
+.fav-meals ul{
+  padding:0;
+  margin:0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.fav-meals li{
+  width:7rem;
+  margin:0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fav-meals li.skeleton{
+  width:0.1px;
+  height:7rem;
+  margin:0;
+}
+#fav-ct li .fav-img {
+  position: relative;
+  z-index: 0;
+}
+.fav-meals li .fav-img img{
+  border-radius: 20%;
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px #3333331A;
+  margin-bottom: 1rem;
+}
+.fav-meals li .fav-img:hover .close-btn{
+  opacity: 1;
+}
+.fav-meals li .fav-img .close-btn{
+  z-index: 1;
+  cursor:pointer;
+  position: absolute;
+  top:0;
+  right:0.1em;
+  border: none;
+  background-color: #fff;
+  opacity: 0;
+}
+.fav-meals li span{
+  width:100%;
+  text-align: center;
+  font-weight: 500;
+  font-size:0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;;
+}
+.fav-meals li span:hover{
+  white-space: normal;
+}
+
+.meal-info{
+  border-radius: 30px;
+  padding:1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+.meal-info .img{
+  position: relative;
+}
+.meal-info .img img{
+  width:100%;
+  height:400px;
+  box-shadow: 0 0 10px 2px #3333331A;
+  background-position: center;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.meal-info .img .tag{
+  position: absolute;
+  user-select: none;
+  top:1rem;
+  padding:0.4rem;
+  background-color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  opacity: .9;
+}
+.meal-info .title{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin:0.75rem 0;
+}
+.meal-info .title .category{
+  font-size: 1rem;
+  opacity: .4;
+}
+.meal-info .title .main{
+  font-size:1.5rem;
+}
+.meal-info .info{
+  position: relative;
+}
+.meal-info .info .desc{
+  font-size: 0.9rem;
+  opacity: .9;
+}
+.meal-info .info h5{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin:1rem 0;
+  padding:0;
+  font-size:0.9rem;
+}
+.meal-info .info ul li{
+  margin:0;
+  padding:0;
+}
+.meal-info .info .btn{
+  position: absolute;
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+  right:0.3rem;
+  bottom:0.3rem;
+}
+.meal-info .info .btn.active i{
+  color: #F35437;
+}
+.meal-info .info .btn i{
+  font-size: 1.2rem;
+  color:#a7a7a7;
+}

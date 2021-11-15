@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div class="mobile-container">
+    <header>
+      <span class="title">Common Sense Quiz</span>
+      <i class="fas fa-times"></i>
+    </header>
+    <section class="section">
+      <div class="status">
+        <div class="questions">
+          <span class="current-status">#475</span><span class="all-status">of 1176</span>
+        </div>
+        <div class="checks">
+          <i class="fas fa-times-circle"></i>
+          <span class="wrong">82</span>
+          <i class="fas fa-check-circle"></i>
+          <span class="correct">393</span>
+        </div>
+      </div>
+      <div class="status-bar">
+        <div class="current-bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="question-container">
+        <span class="question fade-in">
+          what should you do when approaching a road construction work zone?
+        </span>
+        <ul class="answers">
+          <li class="fade-in"><span>A</span><span id="a">asdjfklasdjfkljsdf</span></li>
+          <li class="fade-in"><span>B</span><span id="b">asdjfklasdjfkljsdf</span></li>
+          <li class="fade-in"><span>C</span><span id="c">asdjfklasdjfkljsdf</span></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn answer">A</button>
+        <button class="btn answer">B</button>
+        <button class="btn answer">C</button>
+        <button class="btn submitBtn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+  </div>
+  </section>
+
+  </div>
+</body>
+
+</html>

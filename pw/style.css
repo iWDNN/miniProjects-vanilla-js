@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poppins:wght@400;500;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400;1,500&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #000000;
+  color:#2BBD2D;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.pw-container{
+  width:400px;
+  background-color: rgba(0,0,0,0.1);
+  border:1px solid #2BBD2D;
+}
+
+.pw-header{
+  padding:1rem;
+}
+
+.pw{
+  display: flex;
+  align-items: center;
+  height:70px;
+  width:100%;
+  border:1px solid #2BBD2D;
+  background-color: black;
+  position: relative;
+  font-size: 1rem;
+  padding:1rem;
+}
+.pw button{
+  font-family: inherit;
+  background-color: #000000;
+  color: #2BBD2D;
+  border-left:1px solid#2BBD2D;
+  position: absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  cursor: pointer;
+  transition: .1s;
+}
+.pw button:active{
+  background-color: #2BBD2D;
+  color:black;
+}
+
+.pw-body{
+  padding:1rem;
+}
+.form-control{
+  display: flex;
+  justify-content: space-between;
+  margin: .75rem 0
+}
+
+.generate{
+  width:100%;
+  font-family: inherit;
+  background-color: transparent;
+  border:1px solid #2BBD2D;
+  padding:1rem;
+  color:#2BBD2D;
+  display: block;
+}
