@@ -32,9 +32,9 @@ function addTodo(todo) {
     </div >
     <h2 class=""></h2>
     <div class="btn-group">
-      <button class="status-btn"><i class="fas fa-hourglass-end"></i></button>
-      <button class="check-btn"><i class="fas fa-check"></i></button>
-      <button class="delete-btn"><i class="fas fa-trash"></i></button>
+      <button class="status-btn"><i class="fas fa-hourglass-end"></i>⌛️</button>
+      <button class="check-btn"><i class="fas fa-check"></i>✅</button>
+      <button class="delete-btn"><i class="fas fa-trash"></i>❌</button>
     </div>
   `
   const current = new Date()

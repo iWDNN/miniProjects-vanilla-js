@@ -41,6 +41,7 @@ body{
 .note .btn-group{
   background-color: #30336b;
   padding:0.5rem 0.7rem;
+  flex-shrink: 0;
   display: flex;
   justify-content: flex-end;
 }
